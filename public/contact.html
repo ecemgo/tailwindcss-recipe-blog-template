@@ -15,7 +15,7 @@
             <nav class="text-right">
                 <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-                        <a href="/" class="hover:text-gray-700">Foody</a>
+                        <a href="index.html" class="gradientext text-3xl hover:text-gray-400">Foody</a>
                     </h1>
                     <div class="px-4 cursor-pointer md:hidden" id="menu-button">
                         <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -25,7 +25,7 @@
                 </div>
                 <ul class="text-sm mt-6 hidden md:block" id="menu">
                     <li class="py-1">
-                        <a href="/public/index.html" class="px-4 flex justify-end border-r-4 border-white">
+                        <a href="/public/index.html" class="px-4 flex justify-end border-r-4 border-white hover:text-blueteal">
                             <span>Home</span>
                             <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -33,7 +33,7 @@
                         </a>
                     </li>
                     <li class="py-1">
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                        <a href="/public/about.html" class="px-4 flex justify-end border-r-4 border-white hover:text-blueteal">
                             <span>About</span>
                             <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
@@ -41,7 +41,7 @@
                         </a>
                     </li>
                     <li class="text-gray-600 font-bold py-1">
-                        <a href="/public/contact.html" class="px-4 flex justify-end border-r-4 border-primary">
+                        <a href="/public/contact.html" class="px-4 flex justify-end border-r-4 border-blueteal hover:text-blueteal">
                             <span>Contact</span>
                             <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -52,17 +52,17 @@
             </nav>
         </div> <!-- end nav -->
 
-        <main class="px-16 py-6 bg-gray-100 md:col-end-7 md:col-span-5">
-            <div class="flex justify-center sm:justify-end">
-                <a href="#" class="btn text-primary border-primary border-2 hover:bg-primary hover:text-white hover:scale-110 transition ease-out duration-500">Log in</a>
-                <a href="#" class="btn text-primary ml-2 border-primary border-2 hover:bg-primary hover:text-white hover:scale-110 transition ease-out duration-500">Sign up</a>
+        <main class="px-16 pt-6 pb-32 overflow-hidden bg-gray-100 md:col-end-7 md:col-span-5">
+            <div class="flex justify-end sm:justify-end">
+                <a href="#" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer uppercase">Log in</a>
+                <a href="#" class="ml-2 text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer uppercase">Sign up</a>
             </div>
 
 
             <div>
-                <form>
-                    <div class="grid gap-6 mt-5 mb-10 grid-cols-1">
-                        <div class="grid gap-6 md:grid-cols-2">
+                <form class="mt-20">
+                    <div class="grid gap-6 mt-5 xl:mr-60 xl:ml-60 mb-10 grid-cols-1">
+                        <div class="grid gap-6 md:grid-cols-1">
                             <div>
                                 <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
                                 <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your name" required>
@@ -75,19 +75,19 @@
                                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
                                 <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required>
                             </div> 
-                            <div>
-                                <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your website</label>
-                                <input type="website" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your website" required>
-                            </div> 
+                            
                         </div>
                        
                         <div>
                             <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..." required></textarea>
                         </div>
                     </div>
-    
-                    <button type="submit" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-10 py-2.5 text-center mr-2 mb-2">Submit</button>
+                    
+                    <div class="flex justify-center mt-8">
+                        <button type="submit" class=" text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-10 py-2.5 text-center mr-2 mb-2 uppercase">Submit</button>
+                    </div>
+                    
                 </form>
 
             </div>

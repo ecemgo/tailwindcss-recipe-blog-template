@@ -13,6 +13,7 @@ module.exports = {
           100: "#e2e2d5",
           200: "#888883",
         },
+        blueteal: "#4ddee3",
       },
       fontFamily: {
         body: ["Nunito"],
