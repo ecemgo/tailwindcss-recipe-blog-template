@@ -8,6 +8,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
     <title>Tailwind CSS Template</title>
 </head>
+
+<!-- Images from https://www.freepik.com/ and https://unsplash.com/ -->
+<!-- The recipe in this page from https://www.wellplated.com/tofu-curry/ -->
+
 <body class="text-gray-500 font-body">
 
     <div class="grid md:grid-cols-6"> <!-- content wrapper -->
@@ -16,16 +20,17 @@
                 <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
                         <a href="index.html" class="gradientext text-3xl hover:text-gray-400">Foody</a>
-                    </h1>                    
+                    </h1>
                     <div class="px-4 cursor-pointer md:hidden" id="menu-button">
                         <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </div>
                 </div>
+
                 <ul class="text-sm mt-6 hidden md:block" id="menu">
-                    <li class="py-1">
-                        <a href="/public/index.html" class="px-4 flex justify-end border-r-4 border-white hover:text-blueteal">
+                    <li class="text-gray-600 font-bold py-1">
+                        <a href="/public/index.html" class="px-4 flex justify-end border-r-4 border-blueteal hover:text-blueteal">
                             <span>Home</span>
                             <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -40,8 +45,8 @@
                             </svg>  
                         </a>
                     </li>
-                    <li class="text-gray-600 font-bold py-1">
-                        <a href="/public/contact.html" class="px-4 flex justify-end border-r-4 border-blueteal hover:text-blueteal">
+                    <li class="py-1">
+                        <a href="/public/contact.html" class="px-4 flex justify-end border-r-4 border-white hover:text-blueteal">
                             <span>Contact</span>
                             <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -57,8 +62,8 @@
                 <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer uppercase" type="button">Sign in</button>
             </div>
 
-            <!-- Main modal -->
-            <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+             <!-- Main modal -->
+             <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
                 <div class="relative w-full h-full max-w-md md:h-auto">
                     <!-- Modal content -->
                     <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -97,37 +102,71 @@
             </div> 
 
 
-            <div>
-                <form class="mt-20">
-                    <div class="grid gap-6 mt-5 xl:mr-60 xl:ml-60 mb-10 grid-cols-1">
-                        <div class="grid gap-6 md:grid-cols-1">
-                            <div>
-                                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                                <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your first name" required>
-                            </div>
-                            <div>
-                                <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
-                                <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your last name" required>
-                            </div>
-                            <div>
-                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-                                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required>
-                            </div> 
-                            
-                        </div>
-                       
-                        <div>
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..." required></textarea>
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-center mt-8">
-                        <button type="submit" class=" text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-10 py-2.5 text-center mr-2 mb-2 uppercase">Submit</button>
-                    </div>
-                    
-                </form>
+            <div class="mt-10">
 
+                <div class="flex justify-center">
+                    <img class="mb-10 h-auto max-w-md rounded-lg dark:shadow-gray-800" src="/public/img/curry.jpg" alt="food blog">
+                </div>
+                
+                <h1 class="mb-6 text-2xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-4xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Tofu Curry</span></h1>
+                <h2 class="mb-4 text-base font-extrabold text-gray-900 dark:text-white md:text-xl lg:text-xl">Ingredients</h2>
+                <ul class="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <span><span class="font-semibold text-gray-900 dark:text-white">Tofu:</span> Its mild flavor makes it the ideal canvas to soak in the spices of the curry sauce.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <span><span class="font-semibold text-gray-900 dark:text-white">Soy Sauce:</span> This pantry staple adds saltiness and umami.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <span><span class="font-semibold text-gray-900 dark:text-white">Ginger:</span> This is the ideal flavor to incorporate in Tofu Curry.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <span><span class="font-semibold text-gray-900 dark:text-white">Tomato Paste:</span> Gives the tomato curry base simmered-all-day flavor in a fraction of the time.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <span><span class="font-semibold text-gray-900 dark:text-white">Spices:</span> Curry, cumin, coriander, cayenne pepper, and ground cloves give the curry unmistakable warmth and authentic Indian flavor.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <span><span class="font-semibold text-gray-900 dark:text-white">Diced Tomatoes:</span> This pantry staple lends itself well to curry dishes and helps create the sauce base.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <span><span class="font-semibold text-gray-900 dark:text-white">Greek Yogurt:</span> The Greek yogurt calms the spices and gives the sauce a lovely creaminess, without the excess.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        <span><span class="font-semibold text-gray-900 dark:text-white">Frozen Green Peas:</span> An instant way to up the nutritional content of this tofu curry and a lovely burst of color.</span>
+                    </li>
+                </ul>
+                <h2 class="mb-4 text-base font-extrabold text-gray-900 dark:text-white md:text-xl lg:text-xl">Directions</h2>
+                <ul class="pl-5 mt-2 space-y-1 list-decimal list-inside">
+                    <li>Sauté the tofu in spices until crispy. Move to a plate.</li>
+                    <li>Sauté the onion.</li>
+                    <li>Add the spices and cook until very fragrant.</li>
+                    <li>Add the veggie and remaining ingredients.</li>
+                    <li>Let the tofu curry simmer for 10 minutes, until thickened.</li>
+                    <li>Stir in the tofu and peas.</li>
+                </ul>
+                <div>
+                    <h3 class="mt-8 text-base font-extrabold text-gray-900 dark:text-white md:text-xl lg:text-xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Bon appetit!</span></h3>
+                    <img class="mb-10 h-32 w-32 rounded-lg dark:shadow-gray-800" src="/public/img/bonappetit.png" alt="food blog">
+                </div>
+        
+                </div>
             </div>
 
         </main>

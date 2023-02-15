@@ -58,17 +58,53 @@
 
         <main class="px-16 pt-6 pb-32 overflow-hidden bg-gray-100 md:col-end-7 md:col-span-5">
             <div class="flex justify-end sm:justify-end">
-                <a href="#" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer uppercase">Log in</a>
-                <a href="#" class="ml-2 text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer uppercase">Sign up</a>
+                <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer uppercase" type="button">Sign in</button>
             </div>
+
+             <!-- Main modal -->
+             <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+                <div class="relative w-full h-full max-w-md md:h-auto">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="authentication-modal">
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                        <div class="px-6 py-6 lg:px-8">
+                            <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign in to Foody</h3>
+                            <form class="space-y-6" action="#">
+                                <div>
+                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+                                </div>
+                                <div>
+                                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+                                    <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                                </div>
+                                <div class="flex justify-between">
+                                    <div class="flex items-start">
+                                        <div class="flex items-center h-5">
+                                            <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+                                        </div>
+                                        <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                                    </div>
+                                    <a href="#" class="text-sm text-blueteal hover:underline dark:text-blueteal">Lost Password?</a>
+                                </div>
+                                <button type="submit" class="w-full text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 cursor-pointer uppercase">Login to your account</button>
+                                <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                                    Not registered? <a href="signup.html" class="text-blueteal hover:underline dark:text-blueteal">Create account</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
 
 
             <div class="mt-10">
-
                 <div class="flex justify-center">
                     <img class="mb-10 h-auto max-w-xl rounded-lg dark:shadow-gray-800" src="/public/img/malechef.jpg" alt="food blog">
                 </div>
-                
 
                 <p class="mb-3 font-light text-gray-500 dark:text-gray-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex lorem, feugiat interdum diam at, laoreet imperdiet ligula. Mauris fringilla blandit nibh eleifend vehicula. Duis accumsan pulvinar vestibulum. Sed imperdiet elit eu leo luctus euismod. Nunc vitae purus posuere erat viverra cursus quis sed metus. In non aliquam justo, in consequat nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p class="mb-10 font-light text-gray-500 dark:text-gray-900">Maecenas id nisl magna. Quisque volutpat et arcu non tristique. In fringilla sem erat. Nunc pulvinar elit arcu, eu posuere libero feugiat sed. Nulla facilisi. Integer nibh leo, tempus non turpis ac, lobortis viverra odio. In ut odio vitae sem sollicitudin commodo porttitor non urna. Suspendisse potenti. Integer sit amet fermentum tortor. In sollicitudin ex non metus convallis tristique. Curabitur sed purus sed quam pellentesque mattis vitae eu nunc. Cras metus nisi, ultricies sit amet malesuada sit amet, ultricies id nisi. Nam fringilla dui ut eros dictum, sit amet imperdiet purus rutrum. Aliquam felis quam, vehicula et enim sagittis, placerat rutrum tellus. Ut malesuada elementum quam, cursus pharetra lorem egestas ut.</p>
@@ -77,7 +113,7 @@
                 <div id="accordion-collapse" data-accordion="collapse">
                     <h2 id="accordion-collapse-heading-1">
                       <button type="button" class="flex items-center justify-between w-full p-5 font-bold text-left text-gray-900 border border-b-4 border-blueteal rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-                        <span>What is Foody?</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">What is Foody?</span>
                         <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                       </button>
                     </h2>
@@ -89,7 +125,7 @@
                     </div>
                     <h2 id="accordion-collapse-heading-2">
                       <button type="button" class="flex items-center justify-between w-full p-5 font-bold text-left text-gray-900 border border-b-2 border-blueteal focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-                        <span>How to create new recipe?</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Who creates the recipes?</span>
                         <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                       </button>
                     </h2>
