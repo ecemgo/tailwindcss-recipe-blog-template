@@ -12,12 +12,12 @@ In this project, the responsive template was made by a grid layout.
 
 ##### Home
 <p align="left">
-<img src="https://user-images.githubusercontent.com/13468728/220841822-f119a548-fcc6-4db5-a6cc-aa077bf04d29.jpg" title="Foody" alt="Tailwind CSS" width="500" height="320"/>
+<img src="https://user-images.githubusercontent.com/13468728/220841822-f119a548-fcc6-4db5-a6cc-aa077bf04d29.jpg" title="Foody" alt="Tailwind CSS" width="800" height="450"/>
 </p>
 
 ##### Sign in
 <p align="left">
-<img src="https://user-images.githubusercontent.com/13468728/220841830-84abd2e1-25cc-44e0-83b3-c53715432af6.jpg" title="Foody Login" alt="Tailwind CSS" width="500" height="320"/>
+<img src="https://user-images.githubusercontent.com/13468728/220841830-84abd2e1-25cc-44e0-83b3-c53715432af6.jpg" title="Foody Login" alt="Tailwind CSS" width="800" height="450"/>
 </p>
 
 
