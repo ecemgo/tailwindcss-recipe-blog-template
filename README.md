@@ -2,33 +2,26 @@
 
 ## Overview
 
-In this project, a responsive template was made by the grid layout.
+In this project, the responsive template was made by a grid layout.
 
-### Screenshot
-
-<p align="left">
-<img src="https://user-images.githubusercontent.com/13468728/220841822-f119a548-fcc6-4db5-a6cc-aa077bf04d29.jpg" title="Foody" alt="Tailwind CSS" width="450" height="400"/>
-</p>
-<p align="left">
-<img src="https://user-images.githubusercontent.com/13468728/220841830-84abd2e1-25cc-44e0-83b3-c53715432af6.jpg" title="Foody Login" alt="Tailwind CSS" width="450" height="400"/>
-</p>
-
-### Links
+### Link
 
 - [Live Site URL](https://tailwindcss-recipe-blog-template.netlify.app/)
 
-## The process
+### Screenshot
 
-### Built with
+##### Home
+<p align="left">
+<img src="https://user-images.githubusercontent.com/13468728/220841822-f119a548-fcc6-4db5-a6cc-aa077bf04d29.jpg" title="Foody" alt="Tailwind CSS" width="500" height="320"/>
+</p>
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Grid Layout
-- Javascript
-- Tailwind CSS
-- Flowbite
+##### Sign in
+<p align="left">
+<img src="https://user-images.githubusercontent.com/13468728/220841830-84abd2e1-25cc-44e0-83b3-c53715432af6.jpg" title="Foody Login" alt="Tailwind CSS" width="500" height="320"/>
+</p>
 
-### Working On the Project
+
+## Working on the project
 
 #### Prerequisists:
 
@@ -51,6 +44,18 @@ In this project, a responsive template was made by the grid layout.
 `npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch`
 
 Note: A `public` directory was created instead of a `dist` directory in the project root; the files in the directory are ready for deployment.
+
+
+## The process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Javascript
+- Grid Layout
+- Tailwind CSS
+- Flowbite
 
 ### Useful resources
 
