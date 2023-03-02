@@ -11,23 +11,19 @@ In this project, the responsive template was made by a grid layout.
 ### Screenshot
 
 ##### Home
-<p align="left">
+
+<div align="center">
 <img src="https://user-images.githubusercontent.com/13468728/220841822-f119a548-fcc6-4db5-a6cc-aa077bf04d29.jpg" title="Foody" alt="Tailwind CSS" width="800" height="450"/>
-</p>
-
-##### Sign in
-<p align="left">
+</div>
 <img src="https://user-images.githubusercontent.com/13468728/220841830-84abd2e1-25cc-44e0-83b3-c53715432af6.jpg" title="Foody Login" alt="Tailwind CSS" width="800" height="450"/>
-</p>
-
 
 ## Working on the project
 
-#### Prerequisists:
+### Prerequisists
 
 - Nodejs: v18.14.1 (LTS) (Install Nodejs)
 
-#### Installing the project:
+### Installing the project
 
 ##### The node packages used:
 
@@ -43,8 +39,7 @@ In this project, the responsive template was made by a grid layout.
 
 `npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch`
 
-Note: A `public` directory was created instead of a `dist` directory in the project root; the files in the directory are ready for deployment.
-
+Note: Apart from the documentation of Tailwind CSS, a `public` directory was created instead of a `dist` directory, and `styles.css` was created instead of `input.css` and `output.css` in the project root; the files in the directory are ready for deployment.
 
 ## The process
 
