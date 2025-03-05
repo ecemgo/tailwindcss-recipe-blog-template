@@ -58,6 +58,7 @@ Note: Apart from the documentation of Tailwind CSS, a `public` directory was cre
 
 ## Author
 
-- Website - [ecemgo.com](https://www.ecemgo.com/)
+- Github - [@ecemgo](https://github.com/ecemgo)
+- CodePen - [@ecemgo](https://codepen.io/ecemgo)
+- YouTube - [@ecemgokdogan](https://www.youtube.com/channel/UCktkPv17cw27PaFGcnZa_aQ)
 - Twitter - [@ecemgo](https://twitter.com/ecemgo)
-- Frontend Mentor - [@ecemgo](https://www.frontendmentor.io/profile/ecemgo)
