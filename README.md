@@ -6,7 +6,7 @@ In this project, the responsive template was made by a grid layout.
 
 ### Link
 
-- [Live Site URL](https://tailwindcss-recipe-blog-template.netlify.app/)
+- [Demo](https://tailwindcss-recipe-blog-template.netlify.app/)
 
 ### Screenshot
 
