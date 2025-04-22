@@ -1,8 +1,4 @@
-# Recipe Blog Template by Tailwind CSS
-
-## Overview
-
-In this project, the responsive template was made by a grid layout.
+# Blog Template by Tailwind CSS
 
 ### Link
 
